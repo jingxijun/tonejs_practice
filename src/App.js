@@ -104,10 +104,6 @@ function App() {
     part.current = new Part((time, note) => {
       players.current.player(note).start(time);
     }, []);
-    /**
-     * loop 设置为 true 即无限循环
-     * 如果设置大于 1 的数字则代表要循环具体的次数
-     */
     part.current.loop = true;
     part.current.start();
   }, []);
